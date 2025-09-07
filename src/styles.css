@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  padding: 0 40px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-family: "Playfair Display", serif;
+  letter-spacing: 2px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  background: linear-gradient(45deg, #d4af37, #f9e79f, #b8860b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+nav {
+  display: flex;
+  gap: 12px;
+}
+
+nav > button {
+  font-family: "Montserrat", sans-serif;
+  background-color: white;
+  color: #d4af37;
+  border: 1px solid #d4af37;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+nav > button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  background-color: #d4af37;
+  color: white;
+}
+
+#content {
+  width: 100%;
+}
+
+#hero-section {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  background-image: url("./assets/marco-guerrero-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+#hero-section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0)
+  );
+}
+
+.hero-content > * {
+  text-shadow: 2px 2px 3px black;
+}
+
+.hero-content > h2 {
+  font-size: 3rem;
+}
+
+.hero-content > p {
+  font-size: 2rem;
+}
+
+#restaurant-content {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+  padding: 60px 40px;
+  background: #ffffff;
+  text-align: center;
+}
+
+.restaurant-content-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#restaurant-content i {
+  font-size: 4rem;
+  margin-bottom: 16px;
+  background: linear-gradient(45deg, #d4af37, #f9e79f, #b8860b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#restaurant-content h3 {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+#restaurant-content p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color: #555;
+}
+
+#restaurant-info {
+  padding: 80px 40px;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.restaurant-info-text h2 {
+  letter-spacing: 2px;
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  color: #333;
+}
+
+.restaurant-info-text > hr {
+  border: none;
+  height: 2px;
+  width: 160px;
+  margin: 10px 0;
+  background: linear-gradient(90deg, #d4af37, #f9e79f, #b8860b);
+  border-radius: 4px;
+}
+
+.restaurant-info-text p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 16px;
+}
+
+.restaurant-info-text {
+  max-width: 70ch;
+}
+
+.restaurant-info-image img {
+  max-width: 500px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  background-color: #333;
+  color: #f9e79f;
+  padding: 40px 20px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.footer-logo {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  font-weight: bold;
+  background: linear-gradient(45deg, #d4af37, #f9e79f, #b8860b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+}
+
+.footer-social {
+  height: 40px;
+}
+
+.footer-social a {
+  color: #f9e79f;
+  font-size: 1.5rem;
+  margin: 0 8px;
+  transition: color 0.3s ease, font-size 0.3s ease-in-out;
+}
+
+.footer-social a:hover {
+  color: #d4af37;
+  font-size: 1.8rem;
+}
+
+.footer-copy {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #ccc;
+}
