@@ -63,6 +63,11 @@ nav > button:hover {
   color: white;
 }
 
+nav > button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.6);
+}
+
 #content {
   width: 100%;
 }
