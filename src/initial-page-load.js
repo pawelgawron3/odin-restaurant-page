@@ -1,13 +1,7 @@
-import { createHeroSection } from "./hero-section";
-import { createRestaurantContent } from "./restaurant-content";
-import { createRestaurantInfo } from "./restaurant-info";
-import { createFooter } from "./footer";
+import { createHomepage } from "./createHomepage";
 
 function loadPage() {
-  createHeroSection();
-  createRestaurantContent();
-  createRestaurantInfo();
-  createFooter();
+  createHomepage();
 }
 
 export { loadPage };
