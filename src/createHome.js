@@ -3,11 +3,11 @@ import { createRestaurantContent } from "./restaurant-content";
 import { createRestaurantInfo } from "./restaurant-info";
 import { createFooter } from "./footer";
 
-function createHomepage() {
+function createHome() {
   createHeroSection();
   createRestaurantContent();
   createRestaurantInfo();
   createFooter();
 }
 
-export { createHomepage };
+export { createHome };

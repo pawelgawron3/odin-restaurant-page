@@ -1,7 +1,7 @@
-import { createHomepage } from "./createHomepage";
+import { createHome } from "./createHome";
 
-function loadPage() {
-  createHomepage();
+function loadHomepage() {
+  createHome();
 }
 
-export { loadPage };
+export { loadHomepage };

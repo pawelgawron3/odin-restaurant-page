@@ -1,7 +1,7 @@
 import "./styles.css";
-import { loadPage } from "./initial-page-load";
+import { loadHomepage } from "./initial-page-load";
 import { clearContent } from "./clearContent";
-import { createHomepage } from "./createHomepage";
+import { createHome } from "./createHome";
 import { createMenu } from "./menu";
 
 const homeBtn = document.querySelector("#homeBtn");
@@ -10,7 +10,7 @@ const aboutBtn = document.querySelector("#aboutBtn");
 
 homeBtn.addEventListener("click", () => {
   clearContent();
-  createHomepage();
+  createHome();
 });
 menuBtn.addEventListener("click", () => {
   clearContent();
@@ -20,4 +20,4 @@ aboutBtn.addEventListener("click", () => {
   clearContent();
 });
 
-loadPage();
+loadHomepage();
